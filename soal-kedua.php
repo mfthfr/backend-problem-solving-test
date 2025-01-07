@@ -21,15 +21,23 @@ function soalKedua($ranked, $player){
 }
 
 // input
-$ranked = [100, 100, 50, 40, 40, 20, 10];
-$player = [5, 25, 50, 120];
+$ranked1 = [100, 100, 50, 40, 40, 20, 10];
+$player1 = [5, 25, 50, 120];
 
-// $ranked = [100, 80, 80, 70];
-// $player = [60, 70, 100];
+$ranked2 = [100, 80, 80, 70];
+$player2 = [60, 70, 100];
 
-$result = soalKedua($ranked, $player);
+$ranked3 = [90, 80, 70, 60, 50];
+$player3 = [30, 40, 80, 120];
+
+$result1 = soalKedua($ranked1, $player1);
+$result2 = soalKedua($ranked2, $player2);
+$result3 = soalKedua($ranked3, $player3);
+
 echo "\n";
-echo "Output: " . implode(" ", $result) . "\n";
+echo "Output untuk Input 1: " . implode(" ", $result1) . "\n";
+echo "Output untuk Input 2: " . implode(" ", $result2) . "\n";
+echo "Output untuk Input 3: " . implode(" ", $result3) . "\n";
 echo "\n";
 
 ?>

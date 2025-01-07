@@ -31,11 +31,15 @@ function soalKetiga($input){
     return empty($stack) ? "YES" : "NO";
 }
 
+$input1 = "{[()]}";
+$input2 = "{[(])}";
+$input3 = "{(([])[])[]}";
+
 // kasus tes
 echo "\n";
-echo soalKetiga("{[()]}") . "\n";
-echo soalKetiga("{[(])}") . "\n";
-echo soalKetiga("{(([])[])[]}") . "\n";
+echo soalKetiga($input1) . "\n";
+echo soalKetiga($input2) . "\n";
+echo soalKetiga($input3) . "\n";
 echo "\n";
 
 ?>
